@@ -1,0 +1,118 @@
+/*Montserrat Light      300*/
+/*Montserrat Regular    400*/
+/*Monstserrat Medium    500*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,400&display=swap');
+
+.fondo{
+	font-family: Montserrat;
+	background-image: url("Img/fondo.png");
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	height: 100vh;
+	overflow: scroll;
+}
+
+.titulo{
+	color: #FF7A8A;
+	font-size: 6vh;
+	font-weight: 400;
+	margin-bottom: -2vh;
+}
+
+.textBlanco{
+	color: #f9f9f9;
+	font-size: 3vh;
+}
+
+.textRosa{
+	color: #FF7A8A;
+	font-size: 3vh;
+}
+
+.textEnviar{
+	color: #f9f9f9;
+	font-size: 3vh;
+	font-weight: 500;
+}
+
+.textEnviar:hover{
+	color: #113A5D;
+}
+
+/*Inputs-----------------*/
+.form-control{
+	border-radius: 0;
+	border: 2px solid #FF7A8A;
+	box-shadow: inset 0em 0em 1em 0.3em rgba(255, 122, 138, 0.5);
+	background-color: transparent;
+	backdrop-filter: blur(2px);
+	color: #f9f9f9;
+}
+
+.form-check-input:checked {
+    background-color: #FF7A8A;
+    border-color: #FF7A8A;
+}
+
+.btn-rosa{
+	background-color: #FF7A8A;
+}
+
+.form-control:focus, .form-check-input:focus{
+	background-color: rgba(249, 249, 249, 0.2);
+	border-color: #FF7A8A;
+	color: #f9f9f9;
+	box-shadow: 0 0 8px rgba(255, 122, 138, 0.6);
+}
+
+/*Botones redes-----------------*/
+.home{
+		display: none!important;
+	}
+
+.botoncillo{
+	margin-right: 3vw;
+	margin-left: 3vw;
+	width: 6.7vh;
+}
+/*Respnsive ---------------------------------------------------------------*/
+@media all and (min-width: 768px){
+
+	.titulo{
+		font-size: 8vh;
+	}
+
+	.form-control{
+		height: 5vh;
+	}
+
+	/*Pizza-----------------*/
+	.pizzaRadio{
+		display: flex;
+		justify-content: space-around;
+	}
+
+	/*Cuentame-----------------*/
+	.cajaCuentame{
+		height: 30vh;
+	}
+
+	/*Botones redes-----------------*/
+	.rowBotones{
+		width: 7em;
+		position: absolute;
+	}
+
+	.botoncillo{
+		margin-bottom: 5vh;
+		margin-left: 2em;
+	}
+
+	.home{
+		margin-top: 5vh;
+		display: block!important;
+		width: 6.7vh;
+	}
+
+
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pedro - Diseñador UX/UI</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="contacto.css" rel="stylesheet" type="text/css">   
+</head>
+  <body>    
+
+      <div class="container-fluid d-flex flex-column justify-content-between fondo">
+        <!-- Titulo -->
+        <div class="row titulo text-end mt-1 me-md-1">
+          <div class="col">
+            Contacto
+          </div>
+        </div>
+
+        <!-- Formulario -->
+        <div class="row me-md-4 rowFormulario">
+          <form>
+            <!-- Nombre -->
+            <div class="row mb-1 align-items-center justify-content-md-end rowDato">
+              <div class="col-12 col-md-3 text-md-end">
+                <label for="inputNombre" class="col-form-label textBlanco">Nombre:</label>
+              </div>
+              <div class="col-12 col-md-6">
+                <input type="text" id="inputNombre justify-content-md-end rowDato" class="form-control">
+              </div>
+            </div>
+            <!-- Apellidos -->
+            <div class="row mb-1 align-items-center justify-content-md-end rowDato">
+              <div class="col-12 col-md-3 text-md-end">
+                <label for="inputApellidos" class="col-form-label textBlanco">Apellidos:</label>
+              </div>
+              <div class="col-12 col-md-6">
+                <input type="text" id="inputApellidos" class="form-control">
+              </div>
+            </div>
+            <!-- Teléfono -->
+            <div class="row mb-1 align-items-center justify-content-md-end rowDato">
+              <div class="col-12 col-md-3 text-md-end">
+                <label for="inputTelefono" class="col-form-label textBlanco">Teléfono:</label>
+              </div>
+              <div class="col-12 col-md-6">
+                <input type="text" id="inputTelefono" class="form-control">
+              </div>
+            </div>
+            <!-- Email -->
+            <div class="row mb-1 align-items-center justify-content-md-end rowDato">
+              <div class="col-12 col-md-3 text-md-end">
+                <label for="inputEmail" class="col-form-label textBlanco">Email:</label>
+              </div>
+              <div class="col-12 col-md-6">
+                <input type="email" id="inputEmail" class="form-control">
+              </div>
+            </div>
+            <!-- Pizza Radio -->
+            <div class="row mt-4 mb-2 justify-content-md-end">
+              <div class="col col-md-8 pizzaRadio">
+                <div class="pizza textBlanco">
+                  ¿Piza <span class="textRosa">con</span> o <span class="textRosa">sin</span> piña?
+                </div>
+                <div>
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input py-0 my-0" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label textBlanco ps-2" for="flexRadioDefault1">
+                      Con, ¿lo dudas?
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input py-0 my-0" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label textBlanco ps-2" for="flexRadioDefault2">
+                      Sin, obviamente
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Cuéntame -->
+            <div class="row flex-md-row-reverse align-items-md-end mb-md-4">
+              <div class=" col-12 col-md-8 mb-4 mb-md-0">
+                <label for="textareaCuentame" class="form-label textBlanco">Cuéntame:</label>
+                <textarea class="form-control cajaCuentame" id="textareaCuentame"></textarea>
+              </div>
+            
+              <!-- Sumbit -->
+              <div class="col-12 col-md-3 text-center text-md-end mb-2 mb-md-0">
+                <button type="submit" class="btn btn-rosa textEnviar">Enviar</button>
+              </div>
+            </div>
+          </form>         
+        </div>
+
+        <!-- Botones redes -->
+        <div class="row my-4 my-md-5 rowBotones">
+          <div class="col d-flex justify-content-center flex-md-column">
+            <a href="https://wa.me/34663563142" class="d-block botoncillo"><img src="Iconos/whatsapp.svg"></a>
+            <a href="https://www.behance.net/Pedro_Carrascoso" class="d-block botoncillo"><img src="Iconos/behance.svg"></a>
+            <a href="https://www.instagram.com/pedromcarrascoso/?hl=es" class="d-block botoncillo"><img src="Iconos/instagram.svg"></a>
+            <a href="https://es.linkedin.com/in/pedromcarrascoso" class="botoncillo"><img src="Iconos/linkedin.svg"></a>
+            <a href="index.html"  class="d-block botoncillo home"><img src="Iconos/return.svg"></a>
+          </div>
+        </div>
+        
+      </div><!-- Cierre container fondo -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

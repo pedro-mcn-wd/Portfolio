@@ -1,0 +1,250 @@
+/*Montserrat Light      300*/
+/*Montserrat Regular    400*/
+/*Monstserrat Medium    500*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,400&display=swap');
+
+.fondo{
+	font-family: Montserrat;
+	background-image: url("Img/fondo.png");
+	background-color: #f9f9f9;
+	background-size:100vw 30vh;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	height: 100vh;
+}
+
+.rowReturn{
+	display: none;
+}
+
+.rowMenuTablet{
+	display: none;
+}
+
+.rowMenuWeb{
+	display: none;
+}
+
+.titulo{
+	color: #FF7A8A;
+	font-size: 7vh;
+	font-weight: 400;
+}
+
+.descripcion{
+	position: absolute;
+    bottom: 0;
+	color: #f9f9f9;
+	font-size: 4vh;
+	font-weight: 300;
+	height: 30vh;
+}
+
+.anchoMaximo{
+	max-width: 60vh;
+}
+
+.altoCajaCarrusel{
+	height: 59vh;
+}
+
+.carousel-indicators [data-bs-target]{
+	background-color: #FF7A8A;
+	width: 4vh;
+    height: 1vh;
+    margin-right: 2vh;
+    margin-left: 2vh;
+}
+
+/*CSS Menu--------------------------------------*/
+.divBoton{
+	position: absolute;
+	bottom: -1em;
+	right: 0em;
+}
+
+.iconoMenu{
+	width: 7vh;
+	transform: translate3d(0em, -1em, 0em);
+}
+
+.home{
+	z-index: 1;
+    text-decoration: none;
+    margin-bottom: 0.8em;
+    margin-left: -0.5em;
+}
+
+.svgHome{
+	width: 5.3vh;
+}
+
+.tFuente{
+	font-size: 4.5vh;
+	padding-left: 0.7vh;
+	background-color: none;
+}
+
+.text-lista{
+	color: #f9f9f9;	
+	margin-top: -1.5vh;
+	font-weight: 300;
+	backdrop-filter: blur(100px);
+	background-color: transparent;
+}
+
+.text-lista:hover{
+	background-color: transparent;
+	color: #FF7A8A;
+}
+
+.btn-noColor{
+	background-color: transparent;
+}
+
+.btn-noColor:focus{
+	box-shadow: none;
+}
+
+.text-lista:active{
+	background-color: transparent;
+}
+
+.dropup .dropdown-toggle::after{
+	border: none;
+}
+
+/*Respnsive ---------------------------------------------------------------*/
+@media all and (min-width: 768px){
+
+	.fondo{
+		background-size:100vw 20vh;
+	}
+
+	.divBoton{
+		position: static;
+	}
+
+	.rowTitulo{
+		position: absolute;
+		bottom: 0;
+		left: 1.5em;
+		height: 20vh;
+
+	}
+
+	.descripcion{
+	    bottom: 0;
+		height: 20vh;
+		right: 0vh;
+	}
+
+	.containerDescripcion{
+		left: inherit;
+		right: 1.5em;
+	}
+
+	.anchoMaximo{
+		max-width: 72vh;
+	}
+
+	.altoCajaCarrusel{
+		height: 80vh;
+	}
+
+	.rowHomeMenu{
+		display: none;
+	}
+
+	.rowMenuTablet{
+		display: block;
+		top: 0em;
+		left: 0.3em;
+		right: inherit;
+	}
+
+	.text-lista{
+		color: #113A5D;
+	}
+
+	.dropdown .dropdown-toggle::after{
+		border: none;
+	}
+
+	.iconoMenu{
+	    transform: translate3d(0.2em, 0.5em, 0em);
+	}
+
+
+@media all and (min-width: 1024px){
+
+	.rowMenuWeb{
+		display: flex;
+	}
+
+	.dropend .dropdown-toggle::after{
+		border: none;
+	}
+
+	.fondo{
+		background-size:30vw 100vh;
+		background-position: right;
+		display: flex;
+		flex-direction: row-reverse;
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.rowTitulo{
+		position: static;
+		width: 42vw;
+		display: flex;
+		justify-content: center;
+	}
+
+	.altoCajaCarrusel{
+		height: 100vh;
+	}
+
+	.descripcion{
+    	width: 30vw;
+    	position: fixed;
+    	height: 100vh;
+	}
+
+	.anchoMaximo{
+		max-width: 80vh;
+		margin-bottom: -5vh;
+	}
+
+
+	.dropdown-menu.show {
+	    display: flex;
+	}
+
+	.iconoMenu {
+	    transform: translate3d(0.5em, -0.35em, 0em);
+	}
+
+	.divBoton{
+		position: absolute;
+		bottom: inherit;
+		right: inherit;
+		left: 1vw;
+		top: 1.3vh;
+	}
+
+	.rowReturn{
+		display: flex;		
+		left: inherit;
+		width: 31vw;
+		justify-content: center;
+		margin-bottom: 6vh;
+	}
+
+	.return{
+		width: 5em;
+	}
+
+
+}

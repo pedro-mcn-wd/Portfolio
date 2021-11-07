@@ -1,0 +1,310 @@
+/*Montserrat Light      300*/
+/*Montserrat Regular    400*/
+/*Monstserrat Medium    500*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,400&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', Arial;
+}
+
+.fondo{
+	background-image: url("Img/fondo.png");
+	background-size:100% 100%;
+	height: 100vh;
+	position: relative;
+}
+
+/*Logo y nombre------------------------------------------------------*/
+.cajaTitulo{
+	text-align: center;
+	position: relative;
+	top: 20vh;
+}
+
+.logo{
+	max-width: 7vh;
+}
+
+.titulo{
+	font-size: 7vh;
+	font-weight: 300;
+	text-align: center;
+	color:  #f9f9f9;	
+	border-bottom: 0.3vh solid #f9f9f9;
+	max-width: 31vh;	 
+	max-height: 10vh;		
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.subtitulo{
+	font-size: 4.5vh;
+	font-weight: 300;
+	text-align: center;
+	color:  #FF7A8A;
+	margin-top: 1vh;
+}
+
+/*Menu----------------------------------------------------------------*/
+.menu{
+	width: 5.5vh;
+}
+
+.divBoton{
+	display: flex;
+	justify-content: flex-end;
+	position: absolute;
+	bottom: 2vh;
+	right: 2vh;
+}
+
+.divBoton2{
+	display: none;
+}
+
+.btn-noColor{
+	background-color: transparent;
+}
+
+.tFuente{
+	font-size: 3.5vh;
+	padding-left: 0.7vh;
+	background-color: none;
+}
+
+.text-blanco{
+	color: #f9f9f9;
+	margin-top: 1vh;	
+}
+
+.icono{
+	width: 4.4vh;
+	margin-left: 0.7em;
+}
+
+.mouse{
+	width: 4vh;
+}
+
+
+.btn-noColor:focus{
+	box-shadow: none;
+}
+
+.text-blanco:active{
+	background-color: transparent;
+}
+
+.dropup .dropdown-toggle::after{
+	border-bottom: none;
+}
+
+.dropdown-menu.show {
+    display: flex;
+    flex-direction: column;    
+}
+
+/*botones (web)----------------------------------------------------------------*/
+.btnWeb{
+	position: absolute;
+	top: 5vh;
+	left: 5vh;
+}
+
+.botonesWeb{
+	display: none;
+	align-items: center;
+	position: relative;	
+}
+
+.textoWeb{
+	display: flex;
+    align-items: flex-end;
+	margin-top: -0.5vh;
+	padding-left: 7vh;
+	font-size: 4.3vh;
+	color: #f9f9f9;
+	width: 4vh;
+	top: 0;
+	left: 0;
+	text-overflow: clip;	
+	white-space: nowrap;
+  	overflow: hidden;
+  	position: absolute;
+	text-decoration: none;
+	transition: width 1s;
+}
+
+
+.textoWeb:hover{
+	width: 10em;
+	color: #f9f9f9;
+}
+
+/*Responsive------------------------------------------------------------*/
+@media all and (min-width: 768px){/*tablet vertical*/
+	.cajaTitulo{
+		top: 15vh;
+	}
+
+	.logo{
+		max-width: 10vh;
+	}
+	.titulo{
+		font-size: 11vh;
+		border-bottom: 0.45vh solid #f9f9f9;
+		max-width: 50vh;	 
+		max-height: 18vh;
+	}
+
+	.subtitulo{
+		font-size: 7.5vh;
+	}
+
+
+@media all and (min-width: 1024px){/*tablet horizontal*/
+
+/*Logo y nombre------------------------------------------------------*/
+	.cajaTitulo{/*tablet horizontal*/
+		top: 22vh;
+	}
+
+	.logo{
+		max-width: 12vh;
+	}
+	.titulo{
+		font-size: 13vh;
+		border-bottom: 0.6vh solid #f9f9f9;
+		max-width: 95vh;	 
+		max-height: 18vh;
+	}
+
+	.subtitulo{
+		font-size: 9.5vh;
+	}	
+
+/*Menu----------------------------------------------------------------*/
+	.divBoton{
+		display: none;
+	}
+
+	.divBoton2{
+		display: flex;
+		justify-content: flex;
+		position: absolute;
+		top: 2vh;
+		left: 2.5vh;
+	}
+
+	.menu{
+		transform: translate3d(0px, 10px, 0px);
+	}
+
+	.text-blanco{
+		margin-left: -0.4vh;
+	}
+
+	.icono{
+		margin-left: 0;
+		margin-right: 3vh;
+		margin-top: -0.5vh;
+	}
+
+	.mouse{
+		margin-top: -1.1vh;
+	}
+
+	.pen{
+		margin-top: -1.5vh;
+	}
+
+	.dropdown .dropdown-toggle::after{
+		border: none;	
+	}
+}
+
+
+@media all and (min-width: 1200px){/*web*/
+
+/*Logo y nombre------------------------------------------------------*/
+	.cajaTitulo{/*tablet horizontal*/
+		top: 22vh;
+	}
+
+	.logo{
+		max-width: 12vh;
+	}
+	.titulo{
+		font-size: 13vh;
+		border-bottom: 0.6vh solid #f9f9f9;
+		max-width: 95vh;	 
+		max-height: 18vh;
+	}
+
+	.subtitulo{
+		font-size: 9.5vh;
+	}	
+
+/*Menu----------------------------------------------------------------*/
+	.divBoton{
+		display: none;
+	}
+
+	.divBoton2{
+		display: none;
+	}
+
+	.botonesWeb{
+		display: flex;
+	}
+
+	.icono{ /*Los iconos estan aquí porque fuera del @media afectan a los menus de las otras resoluciones*/
+		position: absolute;
+	}
+	.iPen{
+		width: 5vh;
+		top: 0;
+		left: 0;
+	}
+
+	.iMouse{
+		width: 4.7vh;
+		top: 7vh;
+		left: 0;
+	}
+
+	.iChat{
+		width: 5vh;
+		top: 15vh;
+		left: 0;
+		margin-top: -1vh;
+	}
+}
+
+
+
+
+
+
+/*Hover del menu (Descartado para la versión movil dado que es al pasar el ratón por encima*/
+/*.menu{
+-webkit-transition:all .9s ease; 
+-moz-transition:all .9s ease; 
+-o-transition:all .9s ease; 
+-ms-transition:all .9s ease;
+width: 12em;
+margin-top: 40em;
+margin-right: 2.5em;
+}
+
+.menu:hover {
+-webkit-transform:scale(0.75);
+-moz-transform:scale(0.75);
+-ms-transform:scale(0.75);
+-o-transform:scale(0.75);
+transform:scale(0.75);
+transform-origin: 100% 100%;
+}*/
